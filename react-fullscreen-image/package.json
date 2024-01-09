@@ -1,0 +1,31 @@
+{
+  "name": "react-fullscreen-image",
+  "version": "0.0.3",
+  "description": "An accessible, fast, and animated fullscreen React image viewer.",
+  "keywords": [
+    "react",
+    "hooks",
+    "animation",
+    "javascript",
+    "dom",
+    "css"
+  ],
+  "main": "lib/index.js",
+  "repository": "git@github.com:timc1/react-fullscreen-image.git",
+  "author": "Tim Chang <timchang.tcc@gmail.com> (https://timcchang.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc && cp ./src/fullscreen.css ./lib"
+  },
+  "peerDependencies": {
+    "react": "^16.8.x",
+    "react-dom": "^16.8.x",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "11.12.1",
+    "@types/react": "16.8.10",
+    "@types/react-dom": "16.8.3"
+  }
+}
