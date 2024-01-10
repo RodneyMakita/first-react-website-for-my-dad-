@@ -14,7 +14,7 @@ function Hero() {
         <p className='text-[#e9f0ed] font-bold p-2 md:text-4xl text-3xl font-sans mt-[150px]'>Welcome To Mshax Enteprise.</p>
         <h1 className='text-[#e9f0ed] md:text-2xl sm:text-6xl text-1xl font-bold font-sans pt-6'>Your One-Stop Solution For Reliable </h1>
         <Typed className='md:text-2xl sm:text-6xl text-1xl font-bold'
-                    strings={['Solar Installations.', 'Security Solutions.','And Household Services.']}
+                    strings={['Solar Installations.', 'Security Solutions.','Household Services.']}
                     typeSpeed={20}
                     backSpeed={36}
                     loop
