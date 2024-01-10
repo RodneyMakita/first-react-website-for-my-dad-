@@ -62,12 +62,12 @@ function Contact() {
                                     <h3 class="font-bold text-lg">Give us a call</h3>
                                     <p class="mb-4 text-sm ">We're here to help with any questions.
                                     </p>
-                                    <a href="tel:+27799056428" class="inline-flex items-center mt-1 mr-6 font-medium   gap-x-2 hover:text-gray-800">
+                                    <a href="tel:+270760305906" class="inline-flex items-center mt-1 mr-6 font-medium   gap-x-2 hover:text-gray-800">
                                         076 030 5906
 
                                     </a>
-                                    <a href="tel:+27799056428" class="inline-flex items-center mt-1 font-medium   gap-x-2 hover:text-gray-800">
-                                        0645221507
+                                    <a href="tel:+27645221507" class="inline-flex items-center mt-1 font-medium   gap-x-2 hover:text-gray-800">
+                                        064 522 1507
 
                                     </a>
                                 </div>
@@ -86,10 +86,10 @@ function Contact() {
                                         please
                                         use
                                     </p>
-                                    <a class="inline-flex items-center mt-1 mr-5 font-medium gap-x-2 hover:text-gray-800 " href="mailto:info@zenithcorp.co.za">
+                                    <a class="inline-flex items-center mt-1 mr-5 font-medium gap-x-2 hover:text-gray-800 " href="mailto:info@mshaxenteprise.co.za">
                                         info@mshaxenteprise.co.za
                                     </a>
-                                    <a class="inline-flex items-center mt-1 font-medium  gap-x-2 " href="mailto:info@zenithcorp.co.za">
+                                    <a class="inline-flex items-center mt-1 font-medium  gap-x-2 " href="support@mshaxenteprise.co.za">
                                         support@mshaxenteprise.co.za
                                     </a>
                                 </div>
