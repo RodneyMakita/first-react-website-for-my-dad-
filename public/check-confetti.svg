@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="159px" height="159px" viewBox="0 0 159 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>check-confetti</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="77.4718771" cy="77.4718771" r="77.4718771"></circle>
+        <filter x="-4.5%" y="-4.5%" width="109.0%" height="109.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.13 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="success3" transform="translate(-532.000000, -283.000000)">
+            <g id="check-confetti" transform="translate(534.000000, 285.000000)">
+                <path d="M155,0 L155,155 L77.5,155 L77.5,155 C120.302068,155 155,120.302068 155,77.5 C155,34.6979319 120.302068,0 77.5,0 C34.6979319,0 0,34.6979319 0,77.5 C0,120.302068 34.6979319,155 77.5,155 L0,155 L0,0 L155,0 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <g id="check">
+                    <g id="Mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#37BB91" stroke-width="4" xlink:href="#path-1"></use>
+                    </g>
+                    <polygon id="î¢" stroke="#37BB91" stroke-width="7" fill="#37BB91" fill-rule="nonzero" points="66.78 99.86 106.78 59.86 102.06 55.14 66.78 90.5 52.86 76.58 48.22 81.3"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

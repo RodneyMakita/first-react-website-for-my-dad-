@@ -42,7 +42,7 @@ function CustomFooter() {
 
             </div>
 
-            <div className="text-center text-sm">© 2024 - Crefs Tech (Pty) Ltd. All rights reserved. Developed by SRT Dynamics</div>
+            <div className="text-center text-sm">© 2024 - Mshax Enterprise (Pty) Ltd. All rights reserved. Developed by SRT Dynamics</div>
         </div>
 
 

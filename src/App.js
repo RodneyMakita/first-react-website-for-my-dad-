@@ -9,6 +9,8 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/CustomFooter";
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 function App() {
   return (
     <div >
@@ -21,6 +23,8 @@ function App() {
    <FAQ />
    <Contact />
    <Footer />
+ 
+    
     </div>
   );
 }

@@ -48,6 +48,8 @@ function Contact() {
                                 <p class="text-sm text-center  ">
                                     We'll get back to you in less than 24hrs.
                                 </p>
+                                <input type="hidden" name="_next" value="https://form-confirmation.netlify.app/"></input>
+                                <input type="hidden" name="_captcha" value="false"></input>
                             </form>
                         </div>
 
