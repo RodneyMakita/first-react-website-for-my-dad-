@@ -18,7 +18,7 @@ function Contact() {
 
                         <div class="flex flex-col justify-center p-6 sm:p-8 transition-all bg-sky-50 border border-gray-100 shadow  rounded-2xl lg:p-10">
                             
-                            <form class="space-y-6" target="_blank" action="https://formsubmit.co/mshaxen@gmail.com" method="POST">
+                            <form class="space-y-6"  action="https://formsubmit.co/mshaxen@gmail.com" method="POST">
 
 
 
