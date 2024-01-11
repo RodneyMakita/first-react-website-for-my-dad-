@@ -1,6 +1,8 @@
 import React from 'react'
+import { MDBBtn, MDBAlert } from 'mdb-react-ui-kit';
 
 function Contact() {
+    const triggerItem = useRef(null);
   return (
     <div className=' px-4 sm:px-6 py-16 md:py-20 lg:py-28 bg-sky-50  '>
         <div class="max-w-screen-xl mx-auto">
@@ -42,9 +44,11 @@ function Contact() {
                                         Message</label>
                                     <textarea id=" message" rows="4" name="message" class="block p-3 w-full px-6 text-sm md:text-base  bg-sky-50 rounded-2xl border border-gray-200 focus:ring-primary focus:border-primary " placeholder="Write your thoughts here..."></textarea>
                                 </div>
-                                <button type="submit" class="w-full px-5 py-4 text-sm md:text-base font-medium text-center text-white bg-black rounded-full hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                                <MDBBtn
+                                 type="submit" class="w-full px-5 py-4 text-sm md:text-base font-medium text-center text-white bg-black rounded-full hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                                     Send Message
-                                </button>
+                            
+                                </MDBBtn>
                                 <p class="text-sm text-center  ">
                                     We'll get back to you in less than 24hrs.
                                 </p>
@@ -64,14 +68,28 @@ function Contact() {
                                     <h3 class="font-bold text-lg">Give us a call</h3>
                                     <p class="mb-4 text-sm ">We're here to help with any questions.
                                     </p>
-                                    <a href="tel:+270760305906" class="inline-flex items-center mt-1 mr-6 font-medium   gap-x-2 hover:text-gray-800">
-                                        076 030 5906
+                                    <MDBAlert
+        color='secondary'
+        autohide
+        width={800}
+        position='top-right'
+        offset={50}
+        delay={2000}
+        appendToBody
+        triggerRef={triggerItem2}
+      >
+        A simple secondary alert with
+        <a href='#' className='alert-link'>
+          an example link
+        </a>
+        . Give it a click if you like.
+      </MDBAlert>
+
+                                    <a href="tel:+27724158075" class="inline-flex items-center mt-1 mr-6 font-medium   gap-x-2 hover:text-gray-800">
+                                        072 415 8075
 
                                     </a>
-                                    <a href="tel:+27645221507" class="inline-flex items-center mt-1 font-medium   gap-x-2 hover:text-gray-800">
-                                        064 522 1507
-
-                                    </a>
+                                    
                                 </div>
                             </div>
                       
@@ -88,11 +106,11 @@ function Contact() {
                                         please
                                         use
                                     </p>
-                                    <a class="inline-flex items-center mt-1 mr-5 font-medium gap-x-2 hover:text-gray-800 " href="mailto:info@mshaxenteprise.co.za">
-                                        info@mshaxenteprise.co.za
+                                    <a class="inline-flex items-center mt-1 mr-5 font-medium gap-x-2 hover:text-gray-800 " href="mailto:info@mshaxen.co.za">
+                                        info@mshaxen.co.za
                                     </a>
-                                    <a class="inline-flex items-center mt-1 font-medium  gap-x-2 " href="support@mshaxenteprise.co.za">
-                                        support@mshaxenteprise.co.za
+                                    <a class="inline-flex items-center mt-1 font-medium  gap-x-2 " href="support@mshaxen.co.za">
+                                        support@mshaxen.co.za
                                     </a>
                                 </div>
                             </div>
