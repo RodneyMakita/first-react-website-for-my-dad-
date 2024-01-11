@@ -2,7 +2,7 @@ import React from 'react'
 
 
 function Contact() {
-    const triggerItem = useRef(null);
+
   return (
     <div className=' px-4 sm:px-6 py-16 md:py-20 lg:py-28 bg-sky-50  '>
         <div class="max-w-screen-xl mx-auto">
