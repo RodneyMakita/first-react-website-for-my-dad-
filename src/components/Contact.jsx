@@ -44,9 +44,9 @@ function Contact() {
                                         Message</label>
                                     <textarea id=" message" rows="4" name="message" class="block p-3 w-full px-6 text-sm md:text-base  bg-sky-50 rounded-2xl border border-gray-200 focus:ring-primary focus:border-primary " placeholder="Write your thoughts here..."></textarea>
                                 </div>
-                               
-                                 type="submit" class="w-full px-5 py-4 text-sm md:text-base font-medium text-center text-white bg-black rounded-full hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                                <button type="submit" class="w-full px-5 py-4 text-sm md:text-base font-medium text-center text-white bg-black rounded-full hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                                     Send Message
+                                </button>
                             
                                
                                 <p class="text-sm text-center  ">
