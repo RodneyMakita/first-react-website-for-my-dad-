@@ -1,5 +1,6 @@
 import React from 'react'
 import { AnimationWrapper } from 'react-hover-animation'
+import { Analytics } from '@vercel/analytics/react';
 
 function Services() {
   return (
@@ -175,7 +176,7 @@ function Services() {
                     </div>
                     </AnimationWrapper>
                 </div>
-        </div>
+        </div><Analytics />
     </div>
   )
 }

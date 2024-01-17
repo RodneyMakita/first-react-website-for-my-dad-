@@ -1,6 +1,7 @@
 import React from 'react'
 import Typed from 'react-typed';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Analytics } from '@vercel/analytics/react';
 
 function Hero() {
   return (
@@ -25,6 +26,7 @@ function Hero() {
                 </div>
                 <button className='bg-[#ebf1ee] w-[150px] rounded-lg mx-auto font-black my-6 py-2 text-[black] transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-black hover:text-white '>Explore Services</button>
         </div>
+        <Analytics />
 
     </div>
   )

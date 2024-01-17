@@ -2,6 +2,7 @@ import React from 'react'
 import p1 from '../Assets/IMG-20240107-WA0046.jpg'
 import p2 from '../Assets/IMG-20240107-WA0047.jpg'
 import p3 from '../Assets/IMG-20240107-WA0048.jpg'
+import { Analytics } from '@vercel/analytics/react';
 import p4 from '../Assets/IMG-20240107-WA0050.jpg'
 function Gallery() {
   return (
@@ -59,6 +60,7 @@ function Gallery() {
                     
                 </div>
         </div>
+        <Analytics />
     </div>
   )
 }

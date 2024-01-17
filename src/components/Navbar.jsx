@@ -4,6 +4,7 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from '../Assets/IMG-20240107-WA0051.jpg'
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Analytics } from '@vercel/analytics/react';
 
 function Navbar() {
   const [nav,setNav] = useState(true);
@@ -35,6 +36,7 @@ function Navbar() {
             <li className='p-4 text-lg font-semibold text-white  transition-all '>About</li>
             <il className='p-4 text-lg font-semibold text-white transition-all '>Contact</il>
         </ul></div>
+        <Analytics />
         </div>
   )
 }

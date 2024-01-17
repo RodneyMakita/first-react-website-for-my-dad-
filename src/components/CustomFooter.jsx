@@ -2,6 +2,7 @@ import React from 'react'
 import { Footer } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import logo1 from '../Assets/logo.png'
+import { Analytics } from '@vercel/analytics/react';
 function CustomFooter() {
   return (
     <div>
@@ -47,6 +48,7 @@ function CustomFooter() {
 
 
     </footer>
+    <Analytics />
     </div>
   )
 }

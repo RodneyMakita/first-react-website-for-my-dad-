@@ -1,5 +1,6 @@
 import React from 'react'
 import SolarPanels from '../Assets/klipartz.com (1).png'
+import { Analytics } from '@vercel/analytics/react';
 
 
 function Feature() {
@@ -12,6 +13,7 @@ function Feature() {
         <h1 className='text-[#d8cfcf]  p-2 text-2xl '>Our team of experts includes certified installers and technology specialists who have extensive experience in designing and installing customized systems to meet the unique needs of our clients.</h1>
       </div>
     </div>
+    <Analytics />
     </div>
   )
 }

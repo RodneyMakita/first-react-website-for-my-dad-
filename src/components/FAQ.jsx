@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from '@vercel/analytics/react';
 
 function FAQ() {
   return (
@@ -129,6 +130,7 @@ function FAQ() {
                     </details>
                 </div>
 </div>
+<Analytics />
     </div>
     
   )

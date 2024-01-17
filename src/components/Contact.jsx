@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Analytics } from '@vercel/analytics/react';
 
 function Contact() {
 
@@ -107,6 +107,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <Analytics />
     </div>
   )
 }
