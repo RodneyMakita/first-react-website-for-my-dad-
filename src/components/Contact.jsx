@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 function Contact() {
 
   return (
-    <div className=' px-4 sm:px-6 py-16 md:py-20 lg:py-28 bg-sky-50  '>
+    <div className=' px-4 sm:px-6 py-16 md:py-20 lg:py-28 bg-sky-50  'id='contact'>
         <div class="max-w-screen-xl mx-auto">
                 <div class="max-w-2xl mx-auto lg:max-w-5xl">
 

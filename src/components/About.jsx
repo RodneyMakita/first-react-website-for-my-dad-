@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 function About() {
   return (
-    <div className='bg-sky-50 py-16 sm:py-20  lg:py-28 px-4 md:px-8'>
+    <div className='bg-sky-50 py-16 sm:py-20  lg:py-28 px-4 md:px-8' id='about'>
     <div className="mx-auto max-w-screen-lg">
                 <div className="mb-10 md:mb-14 lg:max-w-2xl md:max-w-xl mx-auto">
                     <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 md:text-3xl md:mb-6 lg:text-5xl">

@@ -10,7 +10,7 @@ function Hero() {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     width: '100vw',
-    height: '110vh'}}className='text-white   '>
+    height: '110vh'}}className='text-white   ' id='hero'>
         <div className='max-w-screen-2xl mt-[-40px] w-full h-screen mx-auto text-center  flex flex-col justify-center '>
         <p className='text-[#e9f0ed] font-bold p-2 md:text-4xl text-3xl font-sans mt-[150px]'>Welcome To Mshax Enteprise.</p>
         <h1 className='text-[#e9f0ed] md:text-2xl sm:text-6xl text-1xl font-bold font-sans pt-6'>Your One-Stop Solution For Reliable </h1>

@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 function FAQ() {
   return (
-    <div className=' bg-sky-50 py-16 sm:py-20 lg:py-28 px-11'>
+    <div className=' bg-sky-50 py-16 sm:py-20 lg:py-28 px-11' id='faq'>
         <div>
 
 <h2 className="py-[20%] md:py-[8%] mb-2 text-center text-2xl font-bold md:text-3xl text-gray-800  lg:text-5xl">

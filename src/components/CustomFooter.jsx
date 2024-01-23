@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 function CustomFooter() {
   return (
     <div>
-<footer className=" w-full mx-auto max-w-screen-3xl px-4 md:px-8 pt-10 md:pt-20 pb-6  bg-[#595f59] text-white">
+<footer className=" w-full mx-auto max-w-screen-3xl px-4 md:px-8 pt-10 md:pt-20 pb-6  bg-[#595f59] text-white" id='footer'>
         <div className="w-full flex flex-col items-center space-y-4">
             <a href="/" className="text-black-800 inline-flex items-center gap-2.5 mb-4 text-lg font-medium" aria-label="logo">
                 <img src={logo1} alt="" width={25} height={25} />

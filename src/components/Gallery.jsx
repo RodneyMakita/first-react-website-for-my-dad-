@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 import p4 from '../Assets/IMG-20240107-WA0050.jpg'
 function Gallery() {
   return (
-    <div className=' bg-sky-50 py-16 sm:py-20 lg:py-28'>
+    <div className=' bg-sky-50 py-16 sm:py-20 lg:py-28' id='gallery'>
         <div className='mx-auto max-w-screen-xl px-4 md:px-8'>
             <div className='mb-10'>
             <h2 className="mb-2 text-center text-2xl font-bold md:text-3xl text-gray-800  lg:text-5xl">
