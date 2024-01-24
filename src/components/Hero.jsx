@@ -2,8 +2,17 @@ import React from 'react'
 import Typed from 'react-typed';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Analytics } from '@vercel/analytics/react';
+import { useState } from 'react';
 
 function Hero() {
+  const [nav,setNav] = useState(true);
+  const handleNav = () =>{
+  setNav(!nav)
+  }
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+
+  const closeMenu = () => setClick(false)
   return (
     <div style={{backgroundImage: 'url(https://crefstech.co.za/img/hero.jpg)',
     backgroundPosition: 'center',
@@ -24,7 +33,8 @@ function Hero() {
                     <p>Empowering Homes, Securing Futures.</p>
                     
                 </div>
-                <button className='bg-[#ebf1ee] w-[150px] rounded-lg mx-auto font-black my-6 py-2 text-[black] transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-black hover:text-white ' >Explore Services</button>
+
+                <button className='bg-[#ebf1ee] w-[150px] rounded-lg mx-auto font-black my-6 py-2 text-[black] transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-black hover:text-white ' ><Link to='services' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Explore Services</Link></button>
         </div>
         <Analytics />
 
