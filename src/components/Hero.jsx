@@ -24,7 +24,7 @@ function Hero() {
                     <p>Empowering Homes, Securing Futures.</p>
                     
                 </div>
-                <button className='bg-[#ebf1ee] w-[150px] rounded-lg mx-auto font-black my-6 py-2 text-[black] transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-black hover:text-white '>Explore Services</button>
+                <button className='bg-[#ebf1ee] w-[150px] rounded-lg mx-auto font-black my-6 py-2 text-[black] transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-black hover:text-white ' >Explore Services</button>
         </div>
         <Analytics />
 

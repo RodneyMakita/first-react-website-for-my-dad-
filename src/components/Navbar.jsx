@@ -37,7 +37,7 @@ function Navbar() {
           </div>
           <div className={!nav ? 'fixed left-0 top-0 w-[80%] h-[56%] rounded-md bg-[#000000] bg-opacity-90 ease-in-out duration-300' : 'fixed left-[-100%]' }>
     <h1 className='w-full text-3xl font-bold text-[#] m-4'><img to='hero' src={logo} width={100} height={177} alt="" /></h1>
-    <ul className='uppercase flex-col items-center lg:flex'>
+    <ul className='uppercase flex-col items-center sm:flex-col sm:items-center lg:flex'>
         <li className='p-4 text-lg font-semibold text-white transition-all hover:text-blue-300'><Link to='hero' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link></li>
         <li className='p-4 text-lg font-semibold text-white transition-all hover:text-blue-300'><Link to='feature' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Feature</Link></li>
         <li className='p-4 text-lg font-semibold text-white transition-all hover:text-blue-300'><Link to='services' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Services</Link></li>
