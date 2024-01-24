@@ -35,7 +35,7 @@ function Navbar() {
         <div onClick={handleNav} className='block md:hidden'>
           {!nav ? <AiOutlineClose size={20} color="white"/> : < TiThMenuOutline size={30} color="white" /> }
           </div>
-          <div className={!nav ? 'fixed left-0 top-0 w-[80%] h-[56%] rounded-md bg-[#000000] bg-opacity-90 ease-in-out duration-300' : 'fixed left-[-100%]' }>
+          <div className={!nav ? 'fixed left-0 top-0 w-[80%] h-[76%]  rounded-md bg-[#000000] bg-opacity-90 ease-in-out duration-300' : 'fixed left-[-100%]' }>
     <h1 className='w-full text-3xl font-bold text-[#] m-4'><img to='hero' src={logo} width={100} height={177} alt="" /></h1>
     <ul className='uppercase flex-col items-center sm:flex-col sm:items-center lg:flex'>
         <li className='p-4 text-lg font-semibold text-white transition-all hover:text-blue-300'><Link to='hero' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link></li>
