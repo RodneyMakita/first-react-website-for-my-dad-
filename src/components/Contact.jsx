@@ -43,24 +43,24 @@ function Contact() {
                                 <div>
                                     <label for="name" class="block mb-2 text-sm md:text-base font-medium">
                                         Full Name</label>
-                                    <input type="text" name="name" id="name" class="bg-sky-50 border px-6 border-gray-200 text-dark text-sm md:text-base rounded-full focus:ring-primary focus:border-primary block w-full p-3" placeholder="Joe Doe" required=""/>
+                                    <input type="text" name="name" id="name" class="bg-sky-50 border px-6 border-gray-200 text-dark text-sm md:text-base rounded-full focus:ring-primary focus:border-primary block w-full p-3" placeholder="Joe Doe" required/>
                                 </div>
                                 <div>
                                     <label for="email" class="block mb-2 font-medium text-sm md:text-base">
                                         Email</label>
-                                    <input type="email" name="email" id="email" class="bg-sky-50 border px-6 border-gray-200 text-sm md:text-base rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="name@company.com" required=""/>
+                                    <input type="email" name="email" id="email" class="bg-sky-50 border px-6 border-gray-200 text-sm md:text-base rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="name@company.com" required/>
                                 </div>
                                 <div>
                                     <label for="phone" class="block mb-2 font-medium text-sm md:text-base ">
                                         Phone Number</label>
-                                    <input type="text" name="phone" id="phone" class="bg-sky-50 border px-6 text-sm md:text-base border-gray-200 rounded-full focus:ring-primary focus:border-primary block w-full p-3 " placeholder="*** *** ****" required=""/>
+                                    <input type="text" name="phone" id="phone" class="bg-sky-50 border px-6 text-sm md:text-base border-gray-200 rounded-full focus:ring-primary focus:border-primary block w-full p-3 " placeholder="*** *** ****" required/>
                                 </div>
                                 <div>
                                     <label for="message" class="block mb-2 font-medium text-sm md:text-base ">
                                         Message</label>
                                     <textarea id=" message" rows="4" name="message" class="block p-3 w-full px-6 text-sm md:text-base  bg-sky-50 rounded-2xl border border-gray-200 focus:ring-primary focus:border-primary " placeholder="Write your thoughts here..."></textarea>
                                 </div>
-                                <button type="submit" class="w-full px-5 py-4 text-sm md:text-base font-medium text-center text-white bg-black rounded-full hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                                <button type="submit" class="w-full px-5 py-4 text-sm md:text-base font-medium text-center text-white bg-sky-600 rounded-full hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                                     Send Message
                                 </button>
                             
