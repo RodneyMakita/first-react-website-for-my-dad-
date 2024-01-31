@@ -1,17 +1,22 @@
 import { Analytics } from '@vercel/analytics/react';
 import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 function Contact() {
     const form = useRef();
-
+    const [showPopup, setShowPopup] = useState(false);
     const sendEmail = (e) => {
       e.preventDefault();
   
       emailjs.sendForm('service_9dcjn34', 'template_lh2sx56', form.current, 'QJr7kTKXOPdy7ULGZ')
         .then((result) => {
             console.log(result.text);
-        }, (error) => {
+            setShowPopup(true);
+            setTimeout(() => {
+                setShowPopup(false);
+            }, 3000); // Hide the pop-up after 3 seconds
+        })
+        .catch((error) => {
             console.log(error.text);
         });
     };
@@ -122,6 +127,11 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            {showPopup && (
+                <div className="fixed top-5 right-5 text-white bg-sky-600 rounded-full hover:bg-black shadow-md p-4 z-50">
+                    <p className="text-white font-semibold">Message sent successfully!</p>
+                </div>
+            )}
             <Analytics />
     </div>
   )
