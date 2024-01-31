@@ -1,7 +1,23 @@
-import React from 'react'
 import { Analytics } from '@vercel/analytics/react';
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_9dcjn34', 'template_lh2sx56', form.current, 'QJr7kTKXOPdy7ULGZ')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
+
+    
 
   return (
     <div className=' px-4 sm:px-6 py-16 md:py-20 lg:py-28 bg-sky-50  'id='contact'>
@@ -20,7 +36,7 @@ function Contact() {
 
                         <div class="flex flex-col justify-center p-6 sm:p-8 transition-all bg-sky-50 border border-gray-100 shadow  rounded-2xl lg:p-10">
                             
-                            <form class="space-y-6"  action="https://formsubmit.co/mshaxen@gmail.com" method="POST">
+                            <form class="space-y-6"  ref={form} onSubmit={sendEmail} >
 
 
 
@@ -52,8 +68,7 @@ function Contact() {
                                 <p class="text-sm text-center  ">
                                     We'll get back to you in less than 24hrs.
                                 </p>
-                                <input type="hidden" name="_next" value="https://form-confirmation.netlify.app/"></input>
-                                <input type="hidden" name="_captcha" value="false"></input>
+                                
                             </form>
                         </div>
 
