@@ -10,7 +10,7 @@ import p4 from '../Assets/IMG-20240107-WA0050.jpg';
 import p5 from '../Assets/IMG-20240304-WA0013.jpg';
 import p6 from '../Assets/IMG-20240304-WA0014.jpg';
 import p7 from '../Assets/IMG-20240304-WA0015.jpg';
-import p8 from '../Assets/IMG-20240107-WA0049.jpg';
+import p8 from '../Assets/IMG20230128200857.jpg';
 
 function Gallery() {
   const images = [p1, p2, p3, p4 ,p5 ,p6 ,p7 ,p8 ];
