@@ -1,5 +1,6 @@
 import React from 'react'
 import Typed from 'react-typed';
+import cover from ''
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Analytics } from '@vercel/analytics/react';
 import { useState } from 'react';
@@ -14,7 +15,7 @@ function Hero() {
 
   const closeMenu = () => setClick(false)
   return (
-    <div style={{backgroundImage: 'url(https://photos.fife.usercontent.google.com/pw/AP1GczNuGzb7qioyIV_Ofije0QasMEkgMfFFj1SLw4WHjwfyxHb5h-NmbzSw=w1629-h915-s-no-gm?authuser=0)',
+    <div style={{backgroundImage: 'url(https://github.com/RodneyMakita/first-react-website-for-my-dad-/blob/main/src/Assets/IMG20230128082232.jpg)',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
