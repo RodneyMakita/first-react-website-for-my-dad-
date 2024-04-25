@@ -10,7 +10,7 @@ function About() {
         width: '100%',
         height: '100%'
       }}
-      className='text-white'
+      
       id='About'
     >
       <div className='bg-sky-50 py-16 sm:py-20 lg:py-28 px-4 md:px-8' id='about'>
