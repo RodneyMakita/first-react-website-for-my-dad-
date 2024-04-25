@@ -14,7 +14,7 @@ function Hero() {
 
   const closeMenu = () => setClick(false)
   return (
-    <div style={{backgroundImage: 'url(https://crefstech.co.za/img/hero.jpg)',
+    <div style={{backgroundImage: 'url(https://photos.fife.usercontent.google.com/pw/AP1GczNuGzb7qioyIV_Ofije0QasMEkgMfFFj1SLw4WHjwfyxHb5h-NmbzSw=w1629-h915-s-no-gm?authuser=0)',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
