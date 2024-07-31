@@ -1,0 +1,4 @@
+/* Example of including Tailwind CSS in your main CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

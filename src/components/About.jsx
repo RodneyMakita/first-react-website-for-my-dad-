@@ -20,7 +20,7 @@ function About() {
               About Us
             </h1>
             <p className="text-gray-500 text-center sm:text-lg lg:text-2xl">
-              Shakes Enteprises is a leading provider of comprehensive smart home solutions, including solar panel
+              Mshax Enteprise is a leading provider of comprehensive smart home solutions, including solar panel
               installations, home automation, CCTV installations and more.
             </p>
           </div>
