@@ -26,30 +26,30 @@ import './input.css'
 import logo from '../Assets/logo.png'
 import { Link } from 'react-scroll'
 
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
+// const products = [
+//   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+//   { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+//   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+//   { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+//   { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+// ]
 
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+// const callsToAction = [
+//   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+//   { name: 'Contact sales', href: '#', icon: PhoneIcon },
+// ]
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white opacity-100">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <header className="bg-white opacity-99">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8  rounded-lg">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
           <Link to='hero' spy={true} smooth={true} offset={50} duration={500}>
             <span className="sr-only">Mshax Enterprise</span></Link>
-            <img alt="" src={logo} style={{ height: '60px', width: 'auto' }} className="h-8 w-auto" />
+            <img alt="" src={logo} style={{ height: '60px', width: 'auto'}} className="h-7 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -69,7 +69,7 @@ export default function Navbar() {
               <ChevronDownIcon aria-hidden="true" className="h-5 w-5" />
             </PopoverButton> */}
 
-            <PopoverPanel
+            {/* <PopoverPanel
               transition
               className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
@@ -104,7 +104,7 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
-            </PopoverPanel>
+            </PopoverPanel> */}
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='hero' spy={true} smooth={true} offset={50} duration={500}>Home</Link></a>
@@ -122,11 +122,11 @@ export default function Navbar() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Mshax Enterprise</span>
               <img
                 alt=""
                 src={logo}
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
             </a>
             <button

@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@emailjs/browser": "^3.12.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@fluentui/react-components": "^9.54.7",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
@@ -13,6 +16,7 @@
     "@vercel/analytics": "^1.1.1",
     "antd": "^5.19.4",
     "flowbite-react": "^0.7.2",
+    "framer-motion": "^11.3.19",
     "mdb-react-ui-kit": "^7.1.0",
     "next-google-fonts": "^2.2.0",
     "react": "^18.2.0",
