@@ -31,7 +31,7 @@ function Feature() {
         <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}>
           {images.map((image, index) => (
             <div key={index}>
-              <img src={image} alt={`Slider Image ${index + 1}`} style={{ width: '100%' }} />
+              <img src={image} alt={`Slider ${index + 1}`} style={{ width: '100%' }} />
             </div>
           ))}
         </Carousel>

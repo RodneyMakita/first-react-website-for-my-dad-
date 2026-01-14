@@ -41,14 +41,17 @@ function Gallery() {
           {images.map((image, index) => (
             <a
               key={index}
-              href="#"
+              href={image}
               className="group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-              onClick={() => openLightbox(index)}
+              onClick={(e) => {
+                e.preventDefault();
+                openLightbox(index);
+              }}
             >
               <img
                 src={image}
                 loading="lazy"
-                alt={`Photo by Rudolph Timba ${index + 1}`}
+                alt={`Project ${index + 1}`}
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
               />
 

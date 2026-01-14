@@ -1,19 +1,17 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import loadinggif from './loading.gif';
-import { Button, message, Popconfirm, Switch } from 'antd';
+import { Button, message, Popconfirm } from 'antd';
 import { Analytics } from '@vercel/analytics/react';
 
 function Contact() {
     const form = useRef();
     const [sending, setSending] = useState(false);
-    const [condition, setCondition] = useState(true);
     const [open, setOpen] = useState(false);
-    const [isFormValid, setIsFormValid] = useState(true);
 
     const validateForm = () => {
         const formData = new FormData(form.current);
-        for (let [key, value] of formData.entries()) {
+        for (let value of formData.values()) {
             if (!value) return false; // Check if any field is empty
         }
         return true;
@@ -22,11 +20,9 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
         if (!validateForm()) {
-            setIsFormValid(false);
             message.error('Please fill out all fields.');
             return;
         }
-        setIsFormValid(true);
         setSending(true);
 
         emailjs.sendForm('service_9dcjn34', 'template_lh2sx56', form.current, 'QJr7kTKXOPdy7ULGZ')
@@ -58,18 +54,11 @@ function Contact() {
             return;
         }
 
-        if (condition && validateForm()) {
-            confirm(); // Automatically confirm and skip dialog if condition is true
-        } else if (validateForm()) {
+        if (validateForm()) {
             setOpen(newOpen);
         } else {
-            setIsFormValid(false);
             message.error('Please fill out all fields.');
         }
-    };
-
-    const changeCondition = (checked) => {
-        setCondition(checked);
     };
 
     return (

@@ -4,17 +4,8 @@ import coverMobile from '../Assets/bg-mobile.jpg';
 import coverDesktop from '../Assets/bg-desktop.jpg';
 import { Link } from "react-scroll";
 import { Analytics } from '@vercel/analytics/react';
-import { useState } from 'react';
 
 function Hero() {
-  const [nav, setNav] = useState(true);
-  const handleNav = () => {
-    setNav(!nav);
-  };
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-
-  const closeMenu = () => setClick(false);
   return (
     <div
       className='text-white'
@@ -59,7 +50,7 @@ function Hero() {
           <button
             className='bg-[#ebf1ee] w-[150px] rounded-lg mx-auto font-black my-6 py-2 text-[black] transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-black hover:text-white '
           >
-            <Link to='services' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Explore Services</Link>
+            <Link to='services' spy={true} smooth={true} offset={50} duration={500}>Explore Services</Link>
           </button>
         </div>
       </div>

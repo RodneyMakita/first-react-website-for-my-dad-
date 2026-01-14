@@ -4,24 +4,13 @@ import { useState } from 'react'
 import {
   Dialog,
   DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
   Popover,
-  PopoverButton,
   PopoverGroup,
-  PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import './input.css'
 import logo from '../Assets/logo.png'
 import { Link } from 'react-scroll'
@@ -46,7 +35,7 @@ export default function Navbar() {
     <header className="bg-white opacity-99">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8  rounded-lg">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#hero" className="-m-1.5 p-1.5">
           <Link to='hero' spy={true} smooth={true} offset={50} duration={500}>
             <span className="sr-only">Mshax Enterprise</span></Link>
             <img alt="" src={logo} style={{ height: '60px', width: 'auto'}} className="h-7 w-auto" />
@@ -107,13 +96,13 @@ export default function Navbar() {
             </PopoverPanel> */}
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='hero' spy={true} smooth={true} offset={50} duration={500}>Home</Link></a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='feature' spy={true} smooth={true} offset={50} duration={500}>Features</Link></a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='services' spy={true} smooth={true} offset={50} duration={500}>Services</Link></a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='gallery' spy={true} smooth={true} offset={50} duration={500}>Gallery</Link></a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='faq' spy={true} smooth={true} offset={50} duration={500}>FAQ</Link></a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900"><Link to='contact' spy={true} smooth={true} offset={50} duration={500}>Contact</Link></a>
+          <a href="#hero" className="text-sm font-semibold leading-6 text-gray-900"><Link to='hero' spy={true} smooth={true} offset={50} duration={500}>Home</Link></a>
+          <a href="#feature" className="text-sm font-semibold leading-6 text-gray-900"><Link to='feature' spy={true} smooth={true} offset={50} duration={500}>Features</Link></a>
+          <a href="#services" className="text-sm font-semibold leading-6 text-gray-900"><Link to='services' spy={true} smooth={true} offset={50} duration={500}>Services</Link></a>
+          <a href="#about" className="text-sm font-semibold leading-6 text-gray-900"><Link to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></a>
+          <a href="#gallery" className="text-sm font-semibold leading-6 text-gray-900"><Link to='gallery' spy={true} smooth={true} offset={50} duration={500}>Gallery</Link></a>
+          <a href="#faq" className="text-sm font-semibold leading-6 text-gray-900"><Link to='faq' spy={true} smooth={true} offset={50} duration={500}>FAQ</Link></a>
+          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900"><Link to='contact' spy={true} smooth={true} offset={50} duration={500}>Contact</Link></a>
         </PopoverGroup>
 
       </nav>
@@ -121,7 +110,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#hero" className="-m-1.5 p-1.5">
               <span className="sr-only">Mshax Enterprise</span>
               <img
                 alt=""
@@ -142,43 +131,43 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="#hero"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='hero' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Home</Link>
                 </a>
                 <a
-                  href="#"
+                  href="#feature"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='feature' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Features</Link>
                 </a>
                 <a
-                  href="#"
+                  href="#services"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='services' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Services</Link>
                 </a>
                 <a
-                  href="#"
+                  href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='about' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>About</Link>
                 </a>
                 <a
-                  href="#"
+                  href="#gallery"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='gallery' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
                 </a>
                 <a
-                  href="#"
+                  href="#faq"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='faq' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
                 </a>
                 <a
-                  href="#"
+                  href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <Link to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
