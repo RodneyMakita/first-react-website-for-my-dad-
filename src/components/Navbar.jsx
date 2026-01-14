@@ -32,26 +32,33 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white opacity-99">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8  rounded-lg">
-        <div className="flex lg:flex-1">
-          <a href="#hero" className="-m-1.5 p-1.5">
-          <Link to='hero' spy={true} smooth={true} offset={50} duration={500}>
-            <span className="sr-only">Mshax Enterprise</span></Link>
-            <img alt="" src={logo} style={{ height: '60px', width: 'auto'}} className="h-7 w-auto" />
+    <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-900/80 backdrop-blur">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <div className="flex items-center gap-3 lg:flex-1">
+          <a href="#hero" className="-m-1.5 p-1.5 flex items-center gap-2">
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-sky-500/10 ring-1 ring-sky-500/40">
+              <img
+                alt="Mshax Enterprise logo"
+                src={logo}
+                className="h-6 w-6 object-contain"
+              />
+            </span>
+            <span className="text-sm font-semibold tracking-tight text-slate-50 sm:text-base">
+              Mshax Enterprise
+            </span>
           </a>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="inline-flex items-center justify-center rounded-full bg-slate-800 px-3 py-2 text-slate-100 shadow-sm ring-1 ring-white/10 hover:bg-slate-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+            <Bars3Icon aria-hidden="true" className="h-5 w-5" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex lg:items-center lg:gap-x-8">
           <Popover className="relative">
             {/* <PopoverButton className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               <span></span>
@@ -96,35 +103,53 @@ export default function Navbar() {
             </PopoverPanel> */}
           </Popover>
 
-          <a href="#hero" className="text-sm font-semibold leading-6 text-gray-900"><Link to='hero' spy={true} smooth={true} offset={50} duration={500}>Home</Link></a>
-          <a href="#feature" className="text-sm font-semibold leading-6 text-gray-900"><Link to='feature' spy={true} smooth={true} offset={50} duration={500}>Features</Link></a>
-          <a href="#services" className="text-sm font-semibold leading-6 text-gray-900"><Link to='services' spy={true} smooth={true} offset={50} duration={500}>Services</Link></a>
-          <a href="#about" className="text-sm font-semibold leading-6 text-gray-900"><Link to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></a>
-          <a href="#gallery" className="text-sm font-semibold leading-6 text-gray-900"><Link to='gallery' spy={true} smooth={true} offset={50} duration={500}>Gallery</Link></a>
-          <a href="#faq" className="text-sm font-semibold leading-6 text-gray-900"><Link to='faq' spy={true} smooth={true} offset={50} duration={500}>FAQ</Link></a>
-          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900"><Link to='contact' spy={true} smooth={true} offset={50} duration={500}>Contact</Link></a>
+          <a href="#hero" className="text-sm font-medium leading-6 text-slate-100 hover:text-sky-300 transition-colors">
+            <Link to='hero' spy={true} smooth={true} offset={-80} duration={500}>Home</Link>
+          </a>
+          <a href="#feature" className="text-sm font-medium leading-6 text-slate-100 hover:text-sky-300 transition-colors">
+            <Link to='feature' spy={true} smooth={true} offset={-80} duration={500}>Features</Link>
+          </a>
+          <a href="#services" className="text-sm font-medium leading-6 text-slate-100 hover:text-sky-300 transition-colors">
+            <Link to='services' spy={true} smooth={true} offset={-80} duration={500}>Services</Link>
+          </a>
+          <a href="#about" className="text-sm font-medium leading-6 text-slate-100 hover:text-sky-300 transition-colors">
+            <Link to='about' spy={true} smooth={true} offset={-80} duration={500}>About</Link>
+          </a>
+          <a href="#gallery" className="text-sm font-medium leading-6 text-slate-100 hover:text-sky-300 transition-colors">
+            <Link to='gallery' spy={true} smooth={true} offset={-80} duration={500}>Gallery</Link>
+          </a>
+          <a href="#faq" className="text-sm font-medium leading-6 text-slate-100 hover:text-sky-300 transition-colors">
+            <Link to='faq' spy={true} smooth={true} offset={-80} duration={500}>FAQ</Link>
+          </a>
+          <a href="#contact" className="inline-flex items-center rounded-full bg-sky-500 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:bg-sky-400 transition-colors">
+            <Link to='contact' spy={true} smooth={true} offset={-80} duration={500}>Contact</Link>
+          </a>
         </PopoverGroup>
 
       </nav>
       <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-950/95 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-700">
           <div className="flex items-center justify-between">
-            <a href="#hero" className="-m-1.5 p-1.5">
-              <span className="sr-only">Mshax Enterprise</span>
-              <img
-                alt=""
-                src={logo}
-                className="h-10 w-auto"
-              />
-            </a>
+            <div className="flex items-center gap-2">
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-500/10 ring-1 ring-sky-500/40">
+                <img
+                  alt="Mshax Enterprise logo"
+                  src={logo}
+                  className="h-5 w-5 object-contain"
+                />
+              </span>
+              <span className="text-sm font-semibold tracking-tight text-slate-50">
+                Mshax Enterprise
+              </span>
+            </div>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="rounded-full p-2.5 text-slate-200 ring-1 ring-white/10 hover:bg-slate-800"
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              <XMarkIcon aria-hidden="true" className="h-5 w-5" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -132,43 +157,43 @@ export default function Navbar() {
               <div className="space-y-2 py-6">
                 <a
                   href="#hero"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-slate-800"
                 >
                   <Link to='hero' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Home</Link>
                 </a>
                 <a
                   href="#feature"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-slate-800"
                 >
                   <Link to='feature' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Features</Link>
                 </a>
                 <a
                   href="#services"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-slate-800"
                 >
                   <Link to='services' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Services</Link>
                 </a>
                 <a
                   href="#about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-slate-800"
                 >
                   <Link to='about' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>About</Link>
                 </a>
                 <a
                   href="#gallery"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-slate-800"
                 >
                   <Link to='gallery' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
                 </a>
                 <a
                   href="#faq"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-50 hover:bg-slate-800"
                 >
                   <Link to='faq' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
                 </a>
                 <a
                   href="#contact"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 bg-sky-400 hover:bg-sky-300"
                 >
                   <Link to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                 </a>
