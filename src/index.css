@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: #000300;
+/* Global modern base styles */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: #0b1120; /* deep slate/indigo background for contrast */
+  color: #0f172a;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
 }

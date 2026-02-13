@@ -11,8 +11,6 @@ import Footer from "./components/CustomFooter";
 import { Analytics } from '@vercel/analytics/react';
 
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 function App() {
   return (
     <div >
